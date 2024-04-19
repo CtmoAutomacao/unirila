@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Unirila</title>
+</head>
+<body >
+<input type="file" onchange="readFile(this)">
+
+<script>
+function readFile(input) {
+  let file = input.files[0];
+  console.log("informacoes files");
+  console.log(input.files[0]);
+  let reader = new FileReader();
+
+  reader.readAsText(file);
+
+  reader.onload = function() {
+    console.log(reader.result);
+	var lines = reader.result.split('\n');
+	console.log(lines.length);
+	//for(var line = 0; line < lines.length; line++){
+	for(var line = 0; line < 3; line++){
+        console.log(lines[line]);
+      }
+  };
+
+  reader.onerror = function() {
+    console.log(reader.error);
+  };
+
+}
+</script>
+</body>
+</html>
