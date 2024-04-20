@@ -1,6 +1,6 @@
-window.onscroll = function () {
-    sumirBarra();
-};
+// window.onscroll = function () {
+//     sumirBarra();
+// };
 
 function sumirBarra() {
     const header = document.querySelector(".fundoHeader");
@@ -41,16 +41,12 @@ function erroArq() {
 
 }
 
-function lerArquivoAjax(fileName) {
-	jQuery.ajax ({
-		type: "GET",
-		datatype: "json",
-		url: "php/listarArq.php",
-		success: exibirArq, 
-		//beforeSend: ,
-		erros: erroArq 
-	});	
-}
+function lerArquivoAjax(fileName) {	
+	let urlArq = "php/listarArq.php?filename="+fileName;
+	return Promise.resolve($.ajax({
+		url: "php/listarArq.php?filename="+fileName
+	}));	
+  }
 
 function textoQue() {
 	/*texto = "<div class='destaque' style='";
@@ -61,7 +57,7 @@ function textoQue() {
 	texto= texto + '<p class="text-muted">';
 	texto= texto + 'O observatório é um grupo de pesquisadores que fazem um levantamento de informações sobre a rota.</p>';
 	texto= texto + '<br><br><br><br><br><br><br><br><br><br><br><br><br><br>';
-	document.getElementById("principal").innerHTML = texto;
+	$( "#principal" ).html( texto );
 	
 }
 
@@ -70,7 +66,7 @@ function textoFaz() {
 	texto= texto + '<p class="text-muted">';
 	texto= texto + '</p>';
 	texto= texto + '<br><br><br><br><br><br><br><br><br><br><br><br><br>';
-	document.getElementById("principal").innerHTML = texto;	
+	$( "#principal" ).html( texto );	
 }
 
 function textoEquipeTecnica() {
@@ -78,69 +74,88 @@ function textoEquipeTecnica() {
 	texto= texto + '<p class="text-muted">';
 	texto= texto + '</p>';
 	texto= texto + '<br><br><br><br><br><br><br><br><br><br><br><br><br>';
-	document.getElementById("principal").innerHTML = texto;	
+	$( "#principal" ).html( texto );	
 }
 
 
-function menuTexto(item) {
-	//alert(item);
+
+
+async function mudarIdioma(item) {
+	//alert(item); 
 	//PORTUGUES
-	if (item == 1) { 
+	let  menus;
+	let nomearquivo = "menus"+item+".txt";
+	/*	
+	console.log( nomearquivo );
+	let lines = lerArquivoAjax(nomearquivo);
 	
-	  document.getElementById("lingua_pt").setAttribute("src", "./img/band_pt_sel.jpg");
-	  document.getElementById("lingua_es").setAttribute("src", "./img/band_es.jpg");
-	  document.getElementById("lingua_en").setAttribute("src", "./img/band_en.jpg");
-	  document.getElementById("menuFundo").style.backgroundColor = "#0F371E";
-	  document.getElementById("rodape").style.backgroundColor = "#0F371E";
-	  lerArquivoAjax("menus.txt");
-	  //console.log(lines[0]);
-	  document.getElementById("menu1").innerHTML = "Observátorio"; 
-	  document.getElementById("menu2").innerHTML = "Corredor Bioceânico"; 
-	  document.getElementById("menu3").innerHTML = "A Unirila"; 
-	  document.getElementById("menu4").innerHTML = "Eventos"; 
-	  document.getElementById("menu5").innerHTML = "Espaço Científico"; 
-	  document.getElementById("menu6").innerHTML = "A Rede"; 
-	  document.getElementById("menu7").innerHTML = "Notícias"; 
-	  document.getElementById("menu8").innerHTML = "Repositório"; 
+	await lines.then( (value) => {	  
+		//console.log(value);  	
+	  menus = JSON.parse(value);		
+	  
+	});
+	*/
+	menus = JSON.parse(await lerArquivoAjax(nomearquivo)); 
+	//console.log(menus);  
+	$( "#menu1" ).html( menus["menu1"]); 
+	$( "#menu2" ).html( menus["menu2"]); 
+	$( "#menu3" ).html( menus["menu3"]); 
+	$( "#menu4" ).html( menus["menu4"]); 
+	$( "#menu5" ).html( menus["menu5"]); 
+	$( "#menu6" ).html( menus["menu6"]); 
+	$( "#menu7" ).html( menus["menu7"]); 
+	$( "#menu8" ).html( menus["menu8"]); 
+
+	if (item == "Pt") { 
+	
+	  $( "#lingua_pt").attr("src", "./img/band_pt_sel.jpg");
+	  $( "#lingua_es").attr("src",  "./img/band_es.jpg");
+	  $( "#lingua_en").attr("src", "./img/band_en.jpg");
+	  $( "#menuFundo").css("backgroundColor",  "#0F371E");
+	  $( "#rodape").css("backgroundColor" , "#0F371E");
+	 
+	  
+
 	
 	}
 	//ESPANHOL
-	if (item == 2) { 		  
-	  document.getElementById("lingua_pt").setAttribute("src", "./img/band_pt.jpg");
-	  document.getElementById("lingua_es").setAttribute("src", "./img/band_es_sel.jpg");
-	  document.getElementById("lingua_en").setAttribute("src", "./img/band_en.jpg");
-	  document.getElementById("menuFundo").style.backgroundColor = "#61130E";
-	  document.getElementById("rodape").style.backgroundColor = "#61130E";
+	if (item == "Es") { 		  
+	  $( "#lingua_pt").attr("src", "./img/band_pt.jpg");
+	  $( "#lingua_es").attr("src", "./img/band_es_sel.jpg");
+	  $( "#lingua_en").attr("src", "./img/band_en.jpg");
+	  $( "#menuFundo").css ("backgroundColor",  "#61130E");
+	  $( "#rodape").css ("backgroundColor", "#61130E");
 	  //document.querySelector("header").style.backgroundColor = "#67130E";
 	  //document.querySelector("footer").style.backgroundColor = "#67130E";
-	  document.getElementById("menu1").innerHTML = "Observatorio"; 
-	  document.getElementById("menu2").innerHTML = "Corredor Bioceánico"; 
-	  document.getElementById("menu3").innerHTML = "Unirila"; 
-	  document.getElementById("menu4").innerHTML = "Eventos"; 
-	  document.getElementById("menu5").innerHTML = "Espacio Científico"; 
-	  document.getElementById("menu6").innerHTML = "La red"; 
-	  document.getElementById("menu7").innerHTML = "Noticias"; 
-	  document.getElementById("menu8").innerHTML = "Repositorio"; 
-	
+	  /*
+	  $( "#menu1" ).html("Observatorio"); 
+	  $( "#menu2" ).html( "Corredor Bioceánico"); 
+	  $( "#menu3" ).html( "Unirila"); 
+	  $( "#menu4" ).html( "Eventos"); 
+	  $( "#menu5" ).html( "Espacio Científico"); 
+	  $( "#menu6" ).html( "La red"); 
+	  $( "#menu7" ).html( "Noticias"); 
+	  $( "#menu8" ).html( "Repositorio"); 
+	*/
 	}
 	//INGLES
-	if (item == 3) { 
-	  document.getElementById("lingua_pt").setAttribute("src", "./img/band_pt.jpg");
-	  document.getElementById("lingua_es").setAttribute("src", "./img/band_es.jpg");
-	  document.getElementById("lingua_en").setAttribute("src", "./img/band_en_sel.jpg");
-	  document.getElementById("menuFundo").style.backgroundColor = "#063172";
-	  document.getElementById("rodape").style.backgroundColor = "#063172";
+	if (item == "En") { 
+	  $( "#lingua_pt").attr("src", "./img/band_pt.jpg");
+	  $( "#lingua_es").attr("src", "./img/band_es.jpg");
+	  $( "#lingua_en").attr("src", "./img/band_en_sel.jpg");
+	  $( "#menuFundo").css("backgroundColor", "#063172");
+	  $( "#rodape").css("backgroundColor", "#063172");
 	  //document.querySelector("header").style.backgroundColor = "#063172";
 	  //document.querySelector("footer").style.backgroundColor = "#063172";
-	  
-	  document.getElementById("menu1").innerHTML = "Observatory"; 
-	  document.getElementById("menu2").innerHTML = "Bioceanic Corridor"; 
-	  document.getElementById("menu3").innerHTML = "The Unirila"; 
-	  document.getElementById("menu4").innerHTML = "Events"; 
-	  document.getElementById("menu5").innerHTML = "Scientific Space"; 
-	  document.getElementById("menu6").innerHTML = "The Net"; 
-	  document.getElementById("menu7").innerHTML = "News"; 
-	  document.getElementById("menu8").innerHTML = "Repository"; 
-	  
+	  /*
+	  $( "#menu1" ).html( "Observatory"); 
+	  $( "#menu2" ).html( "Bioceanic Corridor"); 
+	  $( "#menu3" ).html( "The Unirila"); 
+	  $( "#menu4" ).html( "Events"); 
+	  $( "#menu5" ).html( "Scientific Space"); 
+	  $( "#menu6" ).html( "The Net"); 
+	  $( "#menu7" ).html( "News"); 
+	  $( "#menu8" ).html( "Repository"); 
+	  */
 	}
 }

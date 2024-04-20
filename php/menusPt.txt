@@ -1,0 +1,63 @@
+menu1=Observátorio  
+menu1.1=O que é 
+menu1.2=O que Faz 
+menu1.3=Equipe técnica 
+menu1.4=Equipe Pesquisadores 
+menu1.5=Contato 
+menu1.5=Identidade Visual 
+menu1.6=Comunicação 
+menu1.7=Midias Sociais
+
+menu2=Corredor Bioceânico  
+menu2.1=Histórico 
+menu2.2=Rila 
+menu2.3=Percurso 
+menu2.4=Países 
+menu2.5=Territórios
+menu2.6=Comite de Govenança 
+menu2.7=Oportunidades 
+menu2.8=Investimentos 
+menu2.9=Outros corredores 
+
+menu3=A Unirila  
+menu3.1=Histórico 
+menu3.2=Instituições 
+menu3.3=Mídias 
+menu3.4=Ações 
+menu3.5=Linhas de investigação 
+menu3.6=Projetos 
+menu3.7=Normativas 
+
+menu4=Eventos  
+menu4.1=Histórico 
+menu4.2=Agenda 
+menu4.3=Realeases 
+
+menu5=Espaço Científico  
+menu5.1=Espaço do pesquisador 
+menu5.2=Pesquisa 
+menu5.3=Revistas/Períodicos 
+menu5.4=Grupos de pesquisa 
+menu5.5=Pesquise conosco 
+
+menu6=A Rede  
+menu6.1=Parceiros 
+menu6.2=Financiadores 
+menu6.3=Promotores 
+
+menu7=Notícias  
+menu7.1=Acontece na Unirila 
+menu7.2=Últimas Publicações
+
+menu8=Repositório  
+menu8.1=Documentação 
+menu8.2=Legislação 	
+menu8.3=Publicações 	
+menu8.4=Vídeos 
+menu8.5=Notícias 
+menu8.6=Reportagens 
+menu8.7=Estudos 
+menu8.8=Indicadores 
+menu8.9=Imagens 
+menu8.10=Wiki 
+menu8.11=Podcast 
