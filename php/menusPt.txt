@@ -1,6 +1,6 @@
 menu1=Observátorio  
-menu1_1=O que é 
-menu1_2=O que Faz 
+menu1_1=O que é (Missão)
+menu1_2=O que Faz (Competências)
 menu1_3=Equipe técnica 
 menu1_4=Equipe Pesquisadores 
 menu1_5=Contato 

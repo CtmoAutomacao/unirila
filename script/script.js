@@ -1,5 +1,15 @@
 //variavel global para identificar menu acessado
-const menusCnt = ["principal", "menu1", "menu2", "menu3", "menu4", "menu5", "menu6", "menu7", "menu8"];
+const menusCnt = ["principal", "menu1", "menu1_1", "menu1_2", "menu1_3", "menu1_4", "menu1_5", 
+                                "menu1_6", "menu1_7", "menu1_8",
+                               "menu2", "menu2_1", "menu2_2","menu2_3", "menu2_4","menu2_5", 
+							   "menu2_6","menu2_7", "menu2_8", "menu2_9",
+"menu3", "menu3_1", "menu3_7",
+"menu4", "menu4_1", "menu4_8",
+"menu5", "menu5_1", "menu5_5",
+"menu6", "menu6_1", "menu6_3",
+"menu7", "menu7_1", "menu7_2",
+"menu8", "menu8_1", "menu8_13"];
+
 var menuAcessado = menusCnt[0];
 var linguagemAtual = "Pt";
 
@@ -99,42 +109,79 @@ function textoOQue(item) {
 	$("#imgPonte").css("backgroundImage",  "");
 	$("#imgPonte").css("height", "50px");
 	//$("#imgPonte").remove();
+	console.log('passou');
 	if (item == "Pt") { 
-		$( "#Titulo" ).html("O QUE É ");
-		$( "#P1" ).html("O observatório é um grupo de pesquisadores que fazem um levantamento de informações sobre a rota.");
-		$( "#P2" ).html("");
-		$( "#P3" ).html("");
+		$( "#Titulo" ).html("O QUE É (Missão)");
+		$( "#P1" ).html("O Observatório Interdisciplinar UniRILA - OBSUNIRILA, visa à organização, produção e disponibilização de informações, nas áreas relacionadas ao Corredor, capazes de servir como subsídios para as esferas pública e privada, bem como para a sociedade em geral.");
+		$( "#P2" ).html("A missão do Observatório consiste em favorecer as comunidades que serão impactadas ao longo do trajeto da Rota Bioceânica, por meio de estudos que oportunizem a criação de ambientes de diálogo dos quais decorram novas interações que, por conseguinte, abram possibilidades de novos entendimentos, reflexões e conhecimentos que subsidiem políticas públicas e ações de empoderamento.");
+		$( "#P3" ).html("Assim sendo, tem o potencial de desempenhar um papel importante no processo de tomada de decisões, na formulação de políticas públicas e estruturação de ações privadas, e na atração de investimentos. Além disso, é importante mencionar sua aptidão para a formação do capital humano, crucial para implantação e operacionalização da Rota Bioceânica.");
 		$( "#P4" ).html("");
 	}
 	if (item == "Es") { 
-		$( "#Titulo" ).html("QUÉ ES ");
-		$( "#P1" ).html("El observatorio es un grupo de investigadores que recogen información sobre la ruta.");
-		$( "#P2" ).html("");
-		$( "#P3" ).html("");
+		$( "#Titulo" ).html("QUÉ ES (Misión)");
+		$( "#P1" ).html("El Observatorio Interdisciplinario UniRILA - OBSUNIRILA tiene como objetivo organizar, producir y poner a disposición información en áreas relacionadas con el Corredor, capaces de servir como subsidio para el ámbito público y privado, así como para la sociedad en general.");
+		$( "#P2" ).html("La misión del Observatorio es favorecer a las comunidades que serán impactadas a lo largo del recorrido de la Ruta Bioceánica, a través de estudios que brinden la oportunidad de crear ambientes de diálogo a partir de los cuales se produzcan nuevas interacciones y, por tanto, abran posibilidades a nuevos entendimientos, reflexiones y conocimientos que sustentan políticas públicas y acciones de empoderamiento.");
+		$( "#P3" ).html("Por lo tanto, tiene el potencial de desempeñar un papel importante en el proceso de toma de decisiones, en la formulación de políticas públicas y estructuración de acciones privadas, y en la atracción de inversiones. Además, es importante mencionar su aptitud para la formación de capital humano, crucial para la implementación y operacionalización de la Ruta Bioceánica.");
 		$( "#P4" ).html("");	}
 	if (item == "En") { 
-		$( "#Titulo" ).html("WHAT IS IT ");
-		$( "#P1" ).html("The observatory is a group of researchers who collect information about the route.");
-		$( "#P2" ).html("");
-		$( "#P3" ).html("");
+		$( "#Titulo" ).html("WHAT IS IT (Mission)");
+		$( "#P1" ).html("The UniRILA Interdisciplinary Observatory - OBSUNIRILA aims to organize, produce and make available information in areas related to the Corridor, capable of serving as subsidies for the public and private spheres, as well as for society in general.");
+		$( "#P2" ).html("The Observatory's mission is to favor the communities that will be impacted along the route of the Bioceanic Route, through studies that provide the opportunity to create environments for dialogue from which new interactions take place and, therefore, open up possibilities for new understandings, reflections and knowledge that supports public policies and empowerment actions.");
+		$( "#P3" ).html("Therefore, it has the potential to play an important role in the decision-making process, in the formulation of public policies and structuring of private actions, and in attracting investments. Furthermore, it is important to mention its aptitude for the formation of human capital, crucial for the implementation and operationalization of the Bioceânica Route.");
 		$( "#P4" ).html("");	
 	}
 }
 
 function textoFaz(item) {
-	texto = "<section class='section-content py-5'><h2 style='color:0F371E;padding-top:50px;'> O QUE FAZ </h2> </section>";
-	texto= texto + '<p class="text-muted">';
-	texto= texto + '</p>';
-	texto= texto + '<br><br><br><br><br><br><br><br><br><br><br><br><br>';
-	$( "#principal" ).html( texto );	
+	$("#imgPonte").css("backgroundImage",  "");
+	$("#imgPonte").css("height", "50px");	
+	if (item == "Pt") { 
+		$( "#Titulo" ).html("O QUE FAZ ");
+		$( "#P1" ).html("O Observatório tem o potencial de desempenhar um papel importante no processo de tomada de decisões, na formulação de políticas públicas e estruturação de ações privadas, e na atração de investimentos. Além disso, é importante mencionar sua aptidão para a formação do capital humano, crucial para implantação e operacionalização da Rota Bioceânica. Neste espaço interdisciplinar de interação e integração, com base na investigação social, será realizada a sistematização de conhecimento, especialmente nas áreas educativas, culturais, políticas, jurídicas, turísticas e econômicas, visando o desenvolvimento territorial sustentável.");
+		$( "#P2" ).html("As linhas de pesquisa e estratégias de atuação do Observatório estão sendo alinhadas aos eixos temáticos da UniRILA (Quadro 1), da mesma forma que tomam como base as proposições dos Objetivos do Desenvolvimento Sustentável - ODS, da Agenda 2030, diretamente os ODS: 8 - Trabalho decente e crescimento econômico; 9 - Indústria, inovação e infraestrutura; 11 - Cidades e comunidades sustentáveis; 14 - Vida na água; 15 - Vida terrestre; 16 - Paz, justiça e instituições eficazes; e, 17 - Parcerias e meios de implementação. Como o conjunto de ODS envolve metas e indicadores que contemplam de forma integrada as três dimensões do desenvolvimento sustentável (ambiental, social e econômica), todos acabam sendo tocados, de alguma forma.");
+		$( "#P3" ).html("");
+		$( "#P4" ).html("");
+	}
+	if (item == "Es") { 
+		$( "#Titulo" ).html("QUÉ HACES");
+		$( "#P1" ).html("El observatorio es un grupo de investigadores que recogen información sobre la ruta.");
+		$( "#P2" ).html("");
+		$( "#P3" ).html("");
+		$( "#P4" ).html("");	}
+	if (item == "En") { 
+		$( "#Titulo" ).html("WHAT IT DOES");
+		$( "#P1" ).html("The Observatory has the potential to play an important role in the decision-making process, in formulating public policies and structuring private actions, and in attracting investments. Furthermore, it is important to mention its aptitude for the formation of human capital, crucial for the implementation and operationalization of the Bioceânica Route. In this interdisciplinary space of interaction and integration, based on social research, the systematization of knowledge will be carried out, especially in the educational, cultural, political, legal, tourist and economic areas, aiming at sustainable territorial development.");
+		$( "#P2" ).html("The Observatory's lines of research and action strategies are being aligned with the thematic axes of UniRILA (Table 1), in the same way that they are based on the propositions of the Sustainable Development Goals - SDGs, of the 2030 Agenda, directly the SDGs: 8 - Decent work and economic growth; 9 - Industry, innovation and infrastructure; 11 - Sustainable cities and communities; 14 - Life in the water; 15 - Terrestrial life; 16 - Peace, justice and effective institutions; and, 17 - Partnerships and means of implementation. As the set of SDGs involves goals and indicators that cover the three dimensions of sustainable development (environmental, social and economic) in an integrated way, they all end up being touched in some way.");
+		$( "#P3" ).html("");
+		$( "#P4" ).html("");	
+	}	
+
 }
 
 function textoEquipeTecnica(item) {
-	texto = "<section class='section-content py-5'><h2 style='color:0F371E;padding-top:50px;'> EQUIPE TÉCNICA </h2> </section>";
-	texto= texto + '<p class="text-muted">';
-	texto= texto + '</p>';
-	texto= texto + '<br><br><br><br><br><br><br><br><br><br><br><br><br>';
-	$( "#principal" ).html( texto );		
+	$("#imgPonte").css("backgroundImage",  "");
+	$("#imgPonte").css("height", "50px");	
+	if (item == "Pt") { 
+		$( "#Titulo" ).html("EQUIPE TÉCNICA ");
+		$( "#P1" ).html("A equipe técnica responsável pela produção do website está sob a responsabilidade dos pesquisadores da área de computação do Instituto Federal de Mato Grosso do Sul - IFMS, que também estão vinculados ao Grupo de Pesquisa OIDL.");
+		$( "#P2" ).html("");
+		$( "#P3" ).html("");
+		$( "#P4" ).html("");
+	}
+	if (item == "Es") { 
+		$( "#Titulo" ).html("EQUIPO TECNICO");
+		$( "#P1" ).html("El observatorio es un grupo de investigadores que recogen información sobre la ruta.");
+		$( "#P2" ).html("");
+		$( "#P3" ).html("");
+		$( "#P4" ).html("");	}
+	if (item == "En") { 
+		$( "#Titulo" ).html("TECHNICAL TEAM ");
+		$( "#P1" ).html("The observatory is a group of researchers who collect information about the route.");
+		$( "#P2" ).html("");
+		$( "#P3" ).html("");
+		$( "#P4" ).html("");	
+	}	
+
 }
 
 
@@ -246,17 +293,7 @@ async function mudarIdioma(item) {
 	  $( "#menuFundo").css ("backgroundColor",  "#61130E");
 	  $( "#rodape").css ("backgroundColor", "#61130E");
 	  //document.querySelector("header").style.backgroundColor = "#67130E";
-	  //document.querySelector("footer").style.backgroundColor = "#67130E";
-	  /*
-	  $( "#menu1" ).html("Observatorio"); 
-	  $( "#menu2" ).html( "Corredor Bioceánico"); 
-	  $( "#menu3" ).html( "Unirila"); 
-	  $( "#menu4" ).html( "Eventos"); 
-	  $( "#menu5" ).html( "Espacio Científico"); 
-	  $( "#menu6" ).html( "La red"); 
-	  $( "#menu7" ).html( "Noticias"); 
-	  $( "#menu8" ).html( "Repositorio"); 
-	*/
+	  //document.querySelector("footer").style.backgroundColor = "#67130E";	  
 	}
 	//INGLES
 	if (item == "En") { 
@@ -266,17 +303,7 @@ async function mudarIdioma(item) {
 	  $( "#menuFundo").css("backgroundColor", "#063172");
 	  $( "#rodape").css("backgroundColor", "#063172");
 	  //document.querySelector("header").style.backgroundColor = "#063172";
-	  //document.querySelector("footer").style.backgroundColor = "#063172";
-	  /*
-	  $( "#menu1" ).html( "Observatory"); 
-	  $( "#menu2" ).html( "Bioceanic Corridor"); 
-	  $( "#menu3" ).html( "The Unirila"); 
-	  $( "#menu4" ).html( "Events"); 
-	  $( "#menu5" ).html( "Scientific Space"); 
-	  $( "#menu6" ).html( "The Net"); 
-	  $( "#menu7" ).html( "News"); 
-	  $( "#menu8" ).html( "Repository"); 
-	  */
+	  //document.querySelector("footer").style.backgroundColor = "#063172";	  
 	}
 }
 
@@ -285,6 +312,8 @@ async function mudarIdioma(item) {
 //		"use strict"; window.location.reload(); 
 //	});
 
+
+/*MPV
 
 document.addEventListener("DOMContentLoaded", function(){
         
@@ -334,3 +363,4 @@ document.addEventListener("DOMContentLoaded", function(){
 
 }); 
 // DOMContentLoaded  end
+MPV */
