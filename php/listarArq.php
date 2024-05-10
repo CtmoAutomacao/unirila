@@ -9,17 +9,20 @@
    $dividir = array();
    while(!feof($arquivo)){
        $linha = fgets($arquivo);
-       //echo $linha;
-       if (trim($linha[0]) != ''){
-        $dividir = explode("=", $linha);
-        //$cad = "'".$dividir[0]. "'";
-        $result[$dividir[0]] = trim(preg_replace('/\s\s+/', ' ', $dividir[1]));
-        
-       } /* else {
-        echo "vazio";
-        }
-        echo "<br><br>";       
-        */
+       //verifica se é o arquivo com os nomes de menus
+       if (strripos($filename, "menu") != false) {
+        if (trim($linha[0]) != ''){
+          $dividir = explode("=", $linha);        
+          $result[$dividir[0]] = trim(preg_replace('/\s\s+/', ' ', $dividir[1]));            
+        }   
+
+       } else {
+        //arquivo com paragrafos de menus
+        if (trim($linha[0]) != ''){
+          $dividir = explode("=", $linha);        
+          $result[$dividir[0]] = trim(preg_replace('/\s\s+/', ' ', $dividir[1]));            
+        }   
+       }
    }
    
    fclose($arquivo);

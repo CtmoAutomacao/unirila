@@ -1,0 +1,138 @@
+principal=The Interdisciplinary Observatory for the Bioceanic Route.
+principal_P1=The creation of the Interdisciplinary Observatory for the Bioceanic Route aims to organize information and indicators, capable of serving as subsidies for public and private spheres, as well as society in general in promoting the transfer of knowledge through the production of information. These can serve for decision-making as well as contributing to attracting investments, guiding municipal public policies and private actions aimed at effective knowledge of laws, standards, research carried out and, also, the reduction of inequalities with an increase in job offers, training of human capital, so necessary for the implementation of the Bioceanic Route.
+principal_P2=We are a group that welcomes diversity and brings together researchers at different levels of training, from young people related to scientific initiation (PIBIC and PIBIC-Jr) as well as postgraduate researchers or those related to research funding bodies.
+principal_P3=The concept of 'Observatory' involves the conception of a research center that could become a space for cooperation between civil society organizations, academic institutions and public agencies, national and international.
+principal_P4=This project, in its second cycle, is linked to a proposal from the Latin American University Network – UniRILA and is linked to the GT of the Bioceanic Route countries. It consists of a team of researchers linked to three Higher Education Institutions.
+
+menu1_1=WHAT IS IT (Mission)
+menu1_1_P1=O Observatório Interdisciplinar UniRILA - OBSUNIRILA, visa à organização, produção e disponibilização de informações, nas áreas relacionadas ao Corredor, capazes de servir como subsídios para as esferas pública e privada, bem como para a sociedade em geral. 
+menu1_1_P2=The Observatory's mission is to favor the communities that will be impacted along the route of the Bioceanic Route, through studies that provide the opportunity to create environments for dialogue from which new interactions take place and, therefore, open up possibilities for new understandings, reflections and knowledge that supports public policies and empowerment actions.
+menu1_1_P3=Therefore, it has the potential to play an important role in the decision-making process, in the formulation of public policies and structuring of private actions, and in attracting investments. Furthermore, it is important to mention its aptitude for the formation of human capital, crucial for the implementation and operationalization of the Bioceânica Route.
+menu1_1_P4=
+
+menu1_2=WHAT IT DOES (Skills)
+menu1_2_P1=The Observatory has the potential to play an important role in the decision-making process, in formulating public policies and structuring private actions, and in attracting investments. Furthermore, it is important to mention its aptitude for the formation of human capital, crucial for the implementation and operationalization of the Bioceânica Route. In this interdisciplinary space of interaction and integration, based on social research, the systematization of knowledge will be carried out, especially in the educational, cultural, political, legal, tourist and economic areas, aiming at sustainable territorial development.
+menu1_2_P2=The Observatory's lines of research and action strategies are being aligned with the thematic axes of UniRILA (Table 1), in the same way that they are based on the propositions of the Sustainable Development Goals - SDGs, of the 2030 Agenda, directly the SDGs: 8 - Decent work and economic growth; 9 - Industry, innovation and infrastructure; 11 - Sustainable cities and communities; 14 - Life in the water; 15 - Terrestrial life; 16 - Peace, justice and effective institutions; and, 17 - Partnerships and means of implementation. As the set of SDGs involves goals and indicators that cover the three dimensions of sustainable development (environmental, social and economic) in an integrated way, they all end up being touched in some way.
+menu1_2_P3=
+menu1_2_P4=
+
+menu1_3=TECHNICAL TEAM 
+menu1_3_P1=The technical team responsible for producing the website is under the responsibility of computer researchers from the Federal Institute of Mato Grosso do Sul - IFMS, who are also linked to the OIDL Research Group.
+menu1_3_P2=
+menu1_3_P3=
+menu1_3_P4=
+
+menu1_4=Equipe Pesquisadores 
+menu1_4_P1=O Observatório conta com uma equipe interdisciplinar de pesquisadores de diferentes Instituições de Ensino Superior: Brasil: i) Universidade Católica Dom Bosco - UCDB, através do Programa de Pós-Graduação em Desenvolvimento Local - PPGDL e da S-INOVA como agência de apoio e busca de fomento; ii) Universidade Estadual de Mato Grosso do Sul - UEMS; iii) Instituto Federal de Mato Grosso do Sul - IFMS; iv) Universidade Federal de Mato Grosso do Sul - UFMS; v) Centro Universitário Augusto Motta - UNISUAM-RJ. Vale ressaltar, que, via UniRILA, o grupo ainda conta com pesquisadores do Paraguai: Universidade Nacional de Assunção; da Argentina: Universidade Nacional de Jujuy e Universidade Católica de Salta; e do  Chile: Universidade Católica do Norte e Universidade de Antofagasta.
+menu1_4_P2=
+menu1_4_P3=
+menu1_4_P4=
+
+menu1_5=Contato 
+menu1_5_P1=A equipe responsável pelo OBSUNIRILA está disponível por meio do nosso Fale Conosco ou diretamente pelo email: atendimento@obsunirila.com.br
+menu1_5_P2=
+menu1_5_P3=
+menu1_5_P4=
+
+menu1_6=Identidade Visual 
+menu1_6_P1=A identidade Visual do Observatório está em produção e será disponibilizada neste espaço para que seja utilizada por todos os membros da UniRILA. Fazem parte do grupo de informações, as imagens e o manual de uso das marcas. Até finalização do processo, o Observatório utilizará a Marca da UniRILA desenvolvida pela Universidade Estadual de Mato Grosso do Sul - UEMS e disponibilizada na área da UniRILA de nosso portal.
+menu1_6_P2=
+menu1_6_P3=
+menu1_6_P4=
+
+menu1_7=Comunicação 
+menu1_7_P1=Nesta área serão disponibilizados Releases sobre o Observatório para facilitar a produção de textos sobre o mesmo.
+menu1_7_P2=
+menu1_7_P3=
+menu1_7_P4=
+
+menu1_8=Midias Sociais
+menu1_8_P1=Em desenvolvimento.
+menu1_8_P2=Espaço destinado a disponibilização dos links de acesso às mídias sociais do Observatório em todos os países
+menu1_8_P3=
+menu1_8_P4=
+
+
+menu2_1=Histórico 
+
+menu2_2=Rila 
+
+menu2_3=Percurso 
+
+menu2_4=Países 
+
+menu2_5=Territórios
+
+menu2_6=Comite de Govenança 
+
+menu2_7=Oportunidades 
+
+menu2_8=Investimentos 
+
+menu2_9=Outros corredores 
+
+
+menu3_1=Histórico 
+
+menu3_2=Instituições 
+
+menu3_3=Mídias 
+
+menu3_4=Ações
+
+menu3_5=Linhas de investigação
+
+menu3_6=Projetos 
+
+menu3_7=Normativas 
+
+
+menu4_1=Histórico 
+
+menu4_2=Agenda 
+
+menu4_3=Realeases 
+
+menu5_1=Espaço do pesquisador 
+
+menu5_2=Pesquisa 
+
+menu5_3=Revistas/Períodicos 
+
+menu5_4=Grupos de pesquisa 
+
+menu5_5=Pesquise conosco 
+
+menu6_1=Parceiros 
+
+menu6_2=Financiadores 
+
+menu6_3=Promotores 
+
+
+menu7_1=Acontece na Unirila 
+
+menu7_2=Últimas Publicações
+
+
+menu8_1=Documentação 
+
+menu8_2=Legislação 	
+
+menu8_3=Publicações 	
+
+menu8_4=Vídeos 
+
+menu8_5=Notícias 
+
+menu8_6=Reportagens 
+
+menu8_7=Estudos 
+
+menu8_8=Indicadores 
+
+menu8_9=Imagens 
+
+menu8_10=Wiki 
+
+menu8_11=Podcast 

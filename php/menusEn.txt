@@ -1,12 +1,12 @@
 menu1=Observatory  
-menu1_1=What is it
-menu1_2=What it does
+menu1_1=What is it (Mission)
+menu1_2=What it does (Skills)
 menu1_3=Technical team
 menu1_4=Team Researchers
 menu1_5=Contact 
-menu1_5=Visual identity
-menu1_6=Communication 
-menu1_7=Social media
+menu1_6=Visual identity
+menu1_7=Communication 
+menu1_8=Social media
 
 menu2=Bioceanic Corridor
 menu2_1=History

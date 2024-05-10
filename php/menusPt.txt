@@ -4,9 +4,9 @@ menu1_2=O que Faz (Competências)
 menu1_3=Equipe técnica 
 menu1_4=Equipe Pesquisadores 
 menu1_5=Contato 
-menu1_5=Identidade Visual 
-menu1_6=Comunicação 
-menu1_7=Midias Sociais
+menu1_6=Identidade Visual 
+menu1_7=Comunicação 
+menu1_8=Midias Sociais
 
 menu2=Corredor Bioceânico  
 menu2_1=Histórico 

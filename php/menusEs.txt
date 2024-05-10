@@ -1,12 +1,12 @@
 menu1=Observatorio  
-menu1_1=Qué es
-menu1_2=Qué haces
+menu1_1=Qué es (misión)
+menu1_2=Qué haces (Habilidades)
 menu1_3=Equipo técnico
 menu1_4=Investigadores del equipo
 menu1_5=Contacto 
-menu1_5=Identidad Visual 
-menu1_6=Comunicacion
-menu1_7=Redes sociales
+menu1_6=Identidad Visual 
+menu1_7=Comunicacion
+menu1_8=Redes sociales
 
 menu2=Corredor Bioceánico  
 menu2_1=Historial
