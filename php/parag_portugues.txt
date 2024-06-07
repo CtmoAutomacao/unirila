@@ -21,6 +21,15 @@ menu1_3_P1=A equipe técnica responsável pela produção do website está sob a
 menu1_3_P2=
 menu1_3_P3=
 menu1_3_P4=
+menu1_3_tab_img_1=./img/arlinda.png 
+menu1_3_tab_txt_1=Arlinda Cantero Dorsa <br /> Coordenadora Geral do Projeto <br /> Área: Desenvolvimento Local <br /> UCDB <br /> Lattes:
+menu1_3_tab_link_1=http://lattes.cnpq.br/2445144539614697
+menu1_3_tab_img_2=./img/emerson.png 
+menu1_3_tab_txt_2=Emerson Augusto Miotto Corazza <br /> Coordenador Geral  <br /> Área: Engenharia de Software <br /> IFMS  <br /> Lattes:
+menu1_3_tab_link_2=http://lattes.cnpq.br/9910699815747555
+menu1_3_tab_img_3=./img/marcos.png 
+menu1_3_tab_txt_3=Marcos Pinheiro Vilhanueva <br /> Coordenador Desenvolvimento <br /> Área: Desenvolvimento WEB <br />IFMS  <br /> Lattes:
+menu1_3_tab_link_3=http://lattes.cnpq.br/6800562648110618
 
 menu1_4=Equipe Pesquisadores 
 menu1_4_P1=O Observatório conta com uma equipe interdisciplinar de pesquisadores de diferentes Instituições de Ensino Superior: Brasil: i) Universidade Católica Dom Bosco - UCDB, através do Programa de Pós-Graduação em Desenvolvimento Local - PPGDL e da S-INOVA como agência de apoio e busca de fomento; ii) Universidade Estadual de Mato Grosso do Sul - UEMS; iii) Instituto Federal de Mato Grosso do Sul - IFMS; iv) Universidade Federal de Mato Grosso do Sul - UFMS; v) Centro Universitário Augusto Motta - UNISUAM-RJ. Vale ressaltar, que, via UniRILA, o grupo ainda conta com pesquisadores do Paraguai: Universidade Nacional de Assunção; da Argentina: Universidade Nacional de Jujuy e Universidade Católica de Salta; e do  Chile: Universidade Católica do Norte e Universidade de Antofagasta.

@@ -1,90 +1,112 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="keywords" content="htmlcss bootstrap, multi level menu, submenu, treeview nav menu examples" />
-<meta name="description" content="Bootstrap 5 navbar multilevel treeview examples for any type of project, Bootstrap 5" />  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="htmlcss bootstrap, multi level menu, submenu, treeview nav menu examples" />
+	<meta name="description"
+		content="Bootstrap 5 navbar multilevel treeview examples for any type of project, Bootstrap 5" />
+	<link rel="shortcut icon" href="./img/favicon.png" />
 
-<script src="./script/jquery-3.7.1.js" type="text/javascript"></script>
-<script src="./script/jquery.dd.min.js" type="text/javascript"></script>
-<script src="./script/script.js"></script>
+	<script src="./script/jquery-3.7.1.js" type="text/javascript"></script>
+	<script src="./script/jquery.dd.min.js" type="text/javascript"></script>
+	<script src="./script/script.js"></script>
 
-<link rel="stylesheet" href="style/drip.css">
-<link rel="stylesheet" href="style/style.css">
-<link rel="stylesheet" type="text/css" href="style/dd.css" />
+	<link rel="stylesheet" href="style/drip.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/dd.css" />
 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
 
+	<title>Unirila</title>
 
+	<script type="text/javascript">
+		//TODO mudar logo para fundo branco 
+		//TODO tamanho da imagem no index, diminuir
+		//TODO imagem na lateral da unirila retirar 
+		//TODO justificar os paragrafos
+		//TODO destacar os menus com negrito
+		//TODO colocar bandeiras acima do menu na direita, e retirar a imagem 
+		//TODO colocar no rodapé as midias e tirar do menu
+		//TODO https://www.shopinsecta.com/ https://sebrae.com.br/sites/PortalSebrae
+		$(document).ready(function (e) {
+			try {
+				$("body select").msDropDown();
+			} catch (e) {
+				alert(e.message);
+			}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
-
-<title>Unirila</title>
-
-
-<script type="text/javascript">
-$(document).ready(function(e) {
-try {
-$("body select").msDropDown();
-} catch(e) {
-alert(e.message);
-}
-});</script>
+		});</script>
 
 </head>
-<body >
-	<!-- LOGO UNIRILA FIXO -->
+
+
+<body>
+	<!-- LOGO UNIRILA FIXO >
 	<div id="logo_lateral" style="position: fixed; top: 80pt; left:0pt;">
-	 <img alt="Não leu" src="./img/logo_unirila.png" /> 
-	</div>
+		<img alt="Não leu" src="./img/logo_unirila.png" />
+	</div-->
 	<!-- PORTUGUES ESPANHOL INGLES-->
-	<div style="position: fixed; top: 62pt; left:1%; ">
-	 <a href="javascript:mudarIdioma('Pt')"><img id="lingua_pt" alt="Não leu" src="./img/band_pt_sel.jpg" /> </a>
-	 <a href="javascript:mudarIdioma('Es')"><img id="lingua_es"alt="Não leu" src="./img/band_es.jpg" /> </a> 
-	 <a href="javascript:mudarIdioma('En')"><img id="lingua_en"alt="Não leu" src="./img/band_en.jpg" /> </a> 
-	 <!--br>
-	 <select>
-		<option data-image="./img/band_pt.jpg">Portug</option>
-		<option data-image="./img/band_es.jpg">Espan</option>
-		<option data-image="./img/band_en.jpg">Inglês</option>
-	  </select-->
+	<div style="border:1px red solid;position: fixed; top: 1pt; left:90%; z-index: 9999; background-color: #63a84a;">
+		<!-- <a href="javascript:mudarIdioma('Pt')" 
+		   style="text-align: center; border-radius: 30%; background-color:#686767;font-family: Arial, sans-serif;font-size: medium;font-weight: bold;">BR</a>
+		<a href="javascript:mudarIdioma('Es')">ES</a>
+		<a href="javascript:mudarIdioma('En')">IN</a> -->
+		<a style="background-color: #0090c6;" href="javascript:mudarIdioma('Pt')"><img id="lingua_pt" alt="Não leu" src="./img/band_pt_sel.png" style="width: 20%;"/></a>
+		<a href="javascript:mudarIdioma('Es')"><img id="lingua_es" alt="Não leu" src="./img/band_es.png" style="width: 20%;"/> | </a>
+		<a href="javascript:mudarIdioma('En')"><img id="lingua_en" alt="Não leu" src="./img/band_en.png" style="width: 20%;"/> | </a>
 	</div>
 
 	<!-- MENU RESPONSIVO NO CABECALHO-->
-	<header style="background-color:#0F371E">
+	<header style="background-color:#63a84a">
 		<!-- ============= COMPONENT ============== -->
-		<nav class="navbar navbar-expand-lg navbar-dark" id="menuFundo" >
-		 <div class="container-fluid">
-			 <a class="navbar-brand" href="index.html"><img alt="Unirila" src="./img/logo_unirila_min.png"></a>			 
-		     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-		  <div class="collapse navbar-collapse" id="main_nav">
-			<ul class="navbar-nav mr-auto">				
-				<li class="nav-item dropdown">
-					<a id="menu1" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown" > Observátorio  </a>
-					<ul class="dropdown-menu dropdown-menu-right" >
-					  <li> <a id="menu1_1" class="dropdown-item" href="javascript:textoOQue(linguagemAtual)" > O que é (Missão)</a></li>
-					  <li> <a id="menu1_2" class="dropdown-item" href="javascript:textoFaz(linguagemAtual)"> O que Faz (Competências)</a></li>		
-					  <li> <a id="menu1_3" class="dropdown-item" href="javascript:textoEquipeTecnica(linguagemAtual)"> Equipe técnica</a></li>
-					  <li> <a id="menu1_4" class="dropdown-item" href="#"> Equipe Pesquisadores</a></li>
-					  <li> <a id="menu1_5" class="dropdown-item" href="#"> Contato</a></li>
-					  <li> <a id="menu1_6" class="dropdown-item" href="#"> Identidade Visual</a></li>
-					  <li> <a id="menu1_7" class="dropdown-item" href="#"> Comunicação </a></li>
-					  <li> <a id="menu1_8" class="dropdown-item" href="#"> Midias Sociais</a></li>
-					</ul>
-				</li>
-				
-				<li class="nav-item dropdown">
-					<a id="menu2" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" >  Corredor Bioceânico  </a>
-					<ul class="dropdown-menu">
-					  <li><a id="menu2_1" class="dropdown-item" href="#"> Histórico </a></li>
-					  <li><a id="menu2_2" class="dropdown-item" href="#"> Rila </a></li>
-					  <li><a id="menu2_3" class="dropdown-item" href="#"> Percurso </a></li>
-					  <li><a id="menu2_4" class="dropdown-item" href="#"> Países </a></li>
-					  <li><a id="menu2_5" class="dropdown-item" href="#"> Territórios </a>
-						 <!--ul class="submenu dropdown-menu">
+		<nav class="navbar navbar-expand-lg navbar-dark" id="menuFundo">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img style=" border-radius: 10%; background-color: #fff;" alt="Unirila" src="./img/logo_unirila_min.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#main_nav"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main_nav">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown ">
+							<a id="menu1" class="nav-link  dropdown-toggle font-weight: bold;" href="#" data-bs-toggle="dropdown">
+								Observátorio </a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li> <a id="menu1_1" class="dropdown-item" href="javascript:textoMenu( 'menu1_1')"> O
+										que é (Missão)</a></li>
+								<li> <a id="menu1_2" class="dropdown-item" href="javascript:textoMenu( 'menu1_2')"> O
+										que Faz (Competências)</a></li>
+								<li> <a id="menu1_3" class="dropdown-item" href="javascript:textoMenu( 'menu1_3')">
+										Equipe técnica</a></li>
+								<li> <a id="menu1_4" class="dropdown-item" href="javascript:textoMenu( 'menu1_4')">
+										Equipe Pesquisadores</a></li>
+								<li> <a id="menu1_5" class="dropdown-item" href="javascript:textoMenu( 'menu1_5')">
+										Contato</a></li>
+								<li> <a id="menu1_6" class="dropdown-item" href="javascript:textoMenu( 'menu1_6')">
+										Identidade Visual</a></li>
+								<li> <a id="menu1_7" class="dropdown-item" href="javascript:textoMenu( 'menu1_7')">
+										Comunicação </a></li>
+								<li> <a id="menu1_8" class="dropdown-item" href="javascript:textoMenu( 'menu1_8')">
+										Midias Sociais</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a id="menu2" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Corredor
+								Bioceânico </a>
+							<ul class="dropdown-menu">
+								<li><a id="menu2_1" class="dropdown-item" href="#"> Histórico </a></li>
+								<li><a id="menu2_2" class="dropdown-item" href="#"> Rila </a></li>
+								<li><a id="menu2_3" class="dropdown-item" href="#"> Percurso </a></li>
+								<li><a id="menu2_4" class="dropdown-item" href="#"> Países </a></li>
+								<li><a id="menu2_5" class="dropdown-item" href="#"> Territórios </a>
+									<!--ul class="submenu dropdown-menu">
 							<li><a class="dropdown-item" href="#">Percurso</a></li>
 							<li><a class="dropdown-item" href="#">Países </a></li>
 							<li><a class="dropdown-item" href="#">Territórios</a>
@@ -96,185 +118,205 @@ alert(e.message);
 							<li><a class="dropdown-item" href="#">Submenu item 4</a></li>
 							<li><a class="dropdown-item" href="#">Submenu item 5</a></li>
 						 </ul-->
-					  </li>
-					  <li><a id="menu2_6" class="dropdown-item" href="#"> Comite de Govenança</a></li>
-					  <li><a id="menu2_7" class="dropdown-item" href="#"> Oportunidades </a></li>
-					  <li><a id="menu2_8" class="dropdown-item" href="#"> Investimentos </a></li>
-					  <li><a id="menu2_9" class="dropdown-item" href="#"> Outros corredores </a></li>
+								</li>
+								<li><a id="menu2_6" class="dropdown-item" href="#"> Comite de Govenança</a></li>
+								<li><a id="menu2_7" class="dropdown-item" href="#"> Oportunidades </a></li>
+								<li><a id="menu2_8" class="dropdown-item" href="#"> Investimentos </a></li>
+								<li><a id="menu2_9" class="dropdown-item" href="#"> Outros corredores </a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a id="menu3" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> A Unirila
+							</a>
+							<ul class="dropdown-menu">
+								<li><a id="menu3_1" class="dropdown-item" href="#"> Histórico </a></li>
+								<li><a id="menu3_2" class="dropdown-item" href="#"> Instituições</a></li>
+								<li><a id="menu3_3" class="dropdown-item" href="#"> Mídias </a></li>
+								<li><a id="menu3_4" class="dropdown-item" href="#"> Ações</a></li>
+								<li><a id="menu3_5" class="dropdown-item" href="#"> Linhas de investigação</a></li>
+								<li><a id="menu3_6" class="dropdown-item" href="#"> Projetos</a></li>
+								<li><a id="menu3_7" class="dropdown-item" href="#"> Normativas</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a id="menu4" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Eventos
+							</a>
+							<ul class="dropdown-menu">
+								<li><a id="menu4_1" class="dropdown-item" href="#"> Histórico </a></li>
+								<li><a id="menu4_2" class="dropdown-item" href="#"> Agenda</a></li>
+								<li><a id="menu4_3" class="dropdown-item" href="#"> Realeases </a></li>
+							</ul>
+						</li>
 					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a id="menu3" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" >  A Unirila  </a>
-					<ul class="dropdown-menu">
-					  <li><a id="menu3_1" class="dropdown-item" href="#"> Histórico </a></li>
-					  <li><a id="menu3_2" class="dropdown-item" href="#"> Instituições</a></li>
-					  <li><a id="menu3_3" class="dropdown-item" href="#"> Mídias </a></li>
-					  <li><a id="menu3_4" class="dropdown-item" href="#"> Ações</a></li>
-					  <li><a id="menu3_5" class="dropdown-item" href="#"> Linhas de investigação</a></li>
-					  <li><a id="menu3_6" class="dropdown-item" href="#"> Projetos</a></li>
-					  <li><a id="menu3_7" class="dropdown-item" href="#"> Normativas</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a id="menu4" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Eventos </a>
-					<ul class="dropdown-menu">
-					  <li><a id="menu4_1" class="dropdown-item" href="#"> Histórico </a></li>
-					  <li><a id="menu4_2" class="dropdown-item" href="#"> Agenda</a></li>
-					  <li><a id="menu4_3" class="dropdown-item" href="#"> Realeases </a></li>	
-					</ul>
-				</li>
-			</ul>
 
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item dropdown">
-					<a id="menu5" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Espaço Científico  </a>
-					<ul class="dropdown-menu dropdown-menu-right">
-					  <li><a id="menu5_1" class="dropdown-item" href="#"> Espaço do pesquisador</a></li>
-					  <li><a id="menu5_2" class="dropdown-item" href="#"> Pesquisa</a></li>
-					  <li><a id="menu5_3" class="dropdown-item" href="#"> Revistas/Períodicos </a></li>
-					  <li><a id="menu5_4" class="dropdown-item" href="#"> Grupos de pesquisa </a></li>
-					  <li><a id="menu5_5" class="dropdown-item" href="#"> Pesquise conosco </a></li>
-						 <!--ul class="submenu submenu-left dropdown-menu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item dropdown">
+							<a id="menu5" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Espaço
+								Científico </a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a id="menu5_1" class="dropdown-item" href="#"> Espaço do pesquisador</a></li>
+								<li><a id="menu5_2" class="dropdown-item" href="#"> Pesquisa</a></li>
+								<li><a id="menu5_3" class="dropdown-item" href="#"> Revistas/Períodicos </a></li>
+								<li><a id="menu5_4" class="dropdown-item" href="#"> Grupos de pesquisa </a></li>
+								<li><a id="menu5_5" class="dropdown-item" href="#"> Pesquise conosco </a></li>
+								<!--ul class="submenu submenu-left dropdown-menu">
 							<li><a class="dropdown-item" href="">Submenu item 1</a></li>
 							<li><a class="dropdown-item" href="">Submenu item 2</a></li>
 							<li><a class="dropdown-item" href="">Submenu item 3</a></li>
 							<li><a class="dropdown-item" href="">Submenu item 4</a></li>
-						 </ul-->	
+						 </ul-->
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a id="menu6" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> A Rede
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a id="menu6_1" class="dropdown-item" href="#"> Parceiros </a></li>
+								<li><a id="menu6_2" class="dropdown-item" href="#"> Financiadores</a></li>
+								<li><a id="menu6_3" class="dropdown-item" href="#"> Promotores </a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a id="menu7" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Notícias
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a id="menu7_1" class="dropdown-item" href="#"> Acontece na Unirila </a></li>
+								<li><a id="menu7_2" class="dropdown-item" href="#"> Últimas Publicações</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a id="menu8" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								Repositório </a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a id="menu8_1" class="dropdown-item" href="#"> Documentação </a></li>
+								<li><a id="menu8_2" class="dropdown-item" href="#"> Legislação </a></li>
+								<li><a id="menu8_3" class="dropdown-item" href="#"> Publicações </a></li>
+								<li><a id="menu8_4" class="dropdown-item" href="#"> Vídeos </a></li>
+								<li><a id="menu8_5" class="dropdown-item" href="#"> Notícias </a></li>
+								<li><a id="menu8_6" class="dropdown-item" href="#"> Reportagens </a></li>
+								<li><a id="menu8_7" class="dropdown-item" href="#"> Estudos </a></li>
+								<li><a id="menu8_8" class="dropdown-item" href="#"> Indicadores </a></li>
+								<li><a id="menu8_8" class="dropdown-item" href="#"> Imagens </a></li>
+								<li><a id="menu8_10" class="dropdown-item" href="#"> Wiki </a></li>
+								<li><a id="menu8_11" class="dropdown-item" href="#"> Podcast </a></li>
+							</ul>
+						</li>
 					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a id="menu6" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> A Rede </a>
-					<ul class="dropdown-menu dropdown-menu-right">
-					  <li><a id="menu6_1" class="dropdown-item" href="#"> Parceiros </a></li>
-					  <li><a id="menu6_2" class="dropdown-item" href="#"> Financiadores</a></li>
-					  <li><a id="menu6_3" class="dropdown-item" href="#"> Promotores </a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a id="menu7" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Notícias  </a>
-					<ul class="dropdown-menu dropdown-menu-right">
-					  <li><a id="menu7_1" class="dropdown-item" href="#"> Acontece na Unirila </a></li>
-					  <li><a id="menu7_2" class="dropdown-item" href="#"> Últimas Publicações</a></li>		
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a id="menu8" class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Repositório  </a>
-					<ul class="dropdown-menu dropdown-menu-right">
-					  <li><a id="menu8_1" class="dropdown-item" href="#"> Documentação </a></li>
-					  <li><a id="menu8_2" class="dropdown-item" href="#"> Legislação </a></li>	
-					  <li><a id="menu8_3" class="dropdown-item" href="#"> Publicações </a></li>	
-					  <li><a id="menu8_4" class="dropdown-item" href="#"> Vídeos </a></li>		
-					  <li><a id="menu8_5" class="dropdown-item" href="#"> Notícias </a></li>		
-					  <li><a id="menu8_6" class="dropdown-item" href="#"> Reportagens </a></li>
-					  <li><a id="menu8_7" class="dropdown-item" href="#"> Estudos </a></li>		
-					  <li><a id="menu8_8" class="dropdown-item" href="#"> Indicadores </a></li>
-					  <li><a id="menu8_8" class="dropdown-item" href="#"> Imagens </a></li>		
-					  <li><a id="menu8_10" class="dropdown-item" href="#"> Wiki </a></li>		
-					  <li><a id="menu8_11" class="dropdown-item" href="#"> Podcast </a></li>		
-					</ul>
-				</li>
-			</ul>
-		  </div> <!-- navbar-collapse.// -->
-		 </div> <!-- container-fluid.// -->
+				</div> <!-- navbar-collapse.// -->
+			</div> <!-- container-fluid.// -->
 		</nav>
 	</header> <!-- section-header.// -->
-     <!-- ============= COMPONENT END// ============== -->
+	<!-- ============= COMPONENT END// ============== -->
 
-<div class="container" id="principal">
+	<div class="container" id="principal">
 
-	<div id="imgPonte" class="destaque" style= " background-image:url('./img/ponte_rota.jpg');">
-			<h2> </h2>
-	</div>
-	<section class="section-content py-5">	
-			<h2 id="Titulo" style="color:0F371E">O Observatório Interdisciplinar para a Rota Bioceânica.  </h2>
-			<p id="P1" class="text-muted">A criação do Observatório Interdisciplinar para a Rota Bioceânica objetiva a organização de informações e indicadores, capazes de servirem de subsídios para as esferas públicas e privadas, bem como a sociedade em geral na promoção de transferência de conhecimentos com a produção de informações. Estas podem servir para tomada de decisões assim como contribuição para atração de investimentos, norteio de políticas públicas municipais e ações privadas voltadas ao conhecimento efetivo de leis, normas, pesquisas realizadas e, também, a redução de desigualdades com incremento de ofertas de trabalho, formações do capital humano, tão necessários em prol da implantação da Rota Bioceânica.</p>
-			<p id="P2" class="text-muted">Somos um grupo que acolhe as diversidades e reúne pesquisadores em diferentes níveis de formação, desde jovens relacionados à iniciação cientifica (PIBIC e PIBIC-Jr) como também a pesquisadores da pós-graduação ou relacionados a órgãos de fomento à pesquisa.</p>
-			<p id="P3" class="text-muted">O conceito de "Observatório" passa pela concepção de núcleo de pesquisa que pode vir a ser um espaço de cooperação entre organizações da sociedade civil, instituições acadêmicas e agências públicas, nacionais e internacionais.</p>       
-			<p id="P4" class="text-muted"> Este projeto em seu segundo ciclo, está interligado a uma proposta da Rede Universitária Latino-Americana – UniRILA e possui articulação com o GT dos países da Rota Bioceânica. Constitui-se por uma equipe de pesquisadores vinculados a três Instituições de Ensino Superior.</p>
-	</section>
+		<!--div id="imgPonte" class="destaque" style="background-image:url('./img/ponte_rota.jpg');">
+		</div-->
+		<img id="imgPonte" class="destaque" alt="ponte" src="./img/ponte_rota.jpg" width="200" />
+		<section class="section-content py-5">
+			<h2 id="Titulo" style="color:0F371E">O Observatório Interdisciplinar para a Rota Bioceânica. </h2>
+			<p id="P1" class="text-muted" style="text-align:justify;">A criação do Observatório Interdisciplinar para a Rota Bioceânica objetiva a
+				organização de informações e indicadores, capazes de servirem de subsídios para as esferas públicas e
+				privadas, bem como a sociedade em geral na promoção de transferência de conhecimentos com a produção de
+				informações. Estas podem servir para tomada de decisões assim como contribuição para atração de
+				investimentos, norteio de políticas públicas municipais e ações privadas voltadas ao conhecimento
+				efetivo de leis, normas, pesquisas realizadas e, também, a redução de desigualdades com incremento de
+				ofertas de trabalho, formações do capital humano, tão necessários em prol da implantação da Rota
+				Bioceânica.</p>
+			<p id="P2" class="text-muted" style="text-align:justify;">Somos um grupo que acolhe as diversidades e reúne pesquisadores em diferentes
+				níveis de formação, desde jovens relacionados à iniciação cientifica (PIBIC e PIBIC-Jr) como também a
+				pesquisadores da pós-graduação ou relacionados a órgãos de fomento à pesquisa.</p>
+			<p id="P3" class="text-muted" style="text-align:justify;">O conceito de "Observatório" passa pela concepção de núcleo de pesquisa que
+				pode vir a ser um espaço de cooperação entre organizações da sociedade civil, instituições acadêmicas e
+				agências públicas, nacionais e internacionais.</p>
+			<p id="P4" class="text-muted" style="text-align:justify;"> Este projeto em seu segundo ciclo, está interligado a uma proposta da Rede
+				Universitária Latino-Americana – UniRILA e possui articulação com o GT dos países da Rota Bioceânica.
+				Constitui-se por uma equipe de pesquisadores vinculados a três Instituições de Ensino Superior.</p>
+		</section>
 
-</div><!-- container //  -->
+	</div><!-- container //  -->
 
 
-<footer id="rodape" style="">
- <div class="container">
-        <div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-			   <ul class="logo">
-			   <li>
-				 <img alt="Não leu" src="img/logo_unirila.png" /> 
-				</li>
-			   </ul>
+	<footer id="rodape" style="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<ul class="logo">
+						<li>
+							<img style="border-radius: 10%; background-color: #fff;" alt="Não leu" src="img/logo_unirila.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<ul class="adress">
+						<span style="color: #0090c6; text-transform: uppercase ">Equipe</span>
+						<li>
+							<p>Inicio</p>
+						</li>
+
+						<li>
+							<p>Pesquisadores</p>
+						</li>
+
+						<li>
+							<p>Equipe Técnica</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<ul class="social">
+						<span>Sobre</span>
+						<li>
+							<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+						</li>
+
+						<li>
+							<a href="#"><i class="fa fa-github fa-2x"></i></a>
+						</li>
+
+						<li>
+							<a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+						</li>
+
+						<li>
+							<a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+						</li>
+
+						<li>
+							<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<ul class="contact">
+						<span>Contate-nos</span>
+						<li>
+							<a href="#">Home</a>
+						</li>
+
+						<li>
+							<a href="#">About</a>
+						</li>
+
+						<li>
+							<a href="#">Blog</a>
+						</li>
+
+						<li>
+							<a href="#">Gallery </a>
+						</li>
+
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <ul class="adress">
-                     <span style="color: #0090c6; text-transform: uppercase ">Equipe</span>    
-                     <li>
-                        <p>Inicio</p>
-                      </li>
-                           
-                      <li>
-                        <p>Pesquisadores</p>
-                      </li>
-                           
-                      <li>
-                        <p>Equipe Técnica</p>
-                      </li>
-                 </ul>
-            </div>
-            
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <ul class="social">
-                   <span>Sobre</span>    
-                   <li>
-                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                   </li>
-                  
-                   <li>
-                        <a href="#"><i class="fa fa-github fa-2x"></i></a>
-                   </li>
-                    
-                   <li>
-                        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-                   </li>
-                   
-                   <li>
-                        <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
-                   </li>
-                    
-                   <li>
-                        <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-                  </li>
-                 </ul>
-            </div>
-			
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <ul class="contact">
-                     <span>Contate-nos</span>    
-                     <li>
-                        <a href="#">Home</a>
-                      </li>
-                           
-                      <li>
-                         <a href="#">About</a>
-                      </li>
-                           
-                      <li>
-                        <a href="#">Blog</a>
-                      </li>
-                           
-                      <li>
-                         <a href="#">Gallery </a>
-                      </li>
-                           
-                      <li>
-                        <a href="#">Contact</a>
-                     </li>
-                </ul>
-            </div>			
-       </div> 
-    </div>
-</footer>
+		</div>
+	</footer>
 
 </body>
+
 </html>

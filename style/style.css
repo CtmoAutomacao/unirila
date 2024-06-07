@@ -7,12 +7,12 @@
     
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: green;
+    color: rgb(147, 241, 147);
 }
 
 /* CONFIGURAÇÕES DO RODAPÉ*/
 footer{
-    background-color: #0F371E;
+    background-color: #63a84a;
     padding:70px 0px;
 }	       
 

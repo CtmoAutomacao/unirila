@@ -21,34 +21,44 @@ menu1_3_P1=The technical team responsible for producing the website is under the
 menu1_3_P2=
 menu1_3_P3=
 menu1_3_P4=
+menu1_3_tab_img_1=./img/arlinda.png 
+menu1_3_tab_txt_1=Arlinda Cantero Dorsa <br /> Coordenadora Geral do Projeto <br /> Área: Desenvolvimento Local <br /> UCDB <br /> Lattes:
+menu1_3_tab_link_1=http://lattes.cnpq.br/2445144539614697
+menu1_3_tab_img_2=./img/emerson.png 
+menu1_3_tab_txt_2=Emerson Augusto Miotto Corazza <br /> Coordenador Geral  <br /> Área: Engenharia de Software <br /> IFMS  <br /> Lattes:
+menu1_3_tab_link_2=http://lattes.cnpq.br/9910699815747555
+menu1_3_tab_img_3=./img/marcos.png 
+menu1_3_tab_txt_3=Marcos Pinheiro Vilhanueva <br /> Coordenador Desenvolvimento <br /> Área: Desenvolvimento WEB <br />IFMS  <br /> Lattes:
+menu1_3_tab_link_3=http://lattes.cnpq.br/6800562648110618
 
-menu1_4=Equipe Pesquisadores 
-menu1_4_P1=O Observatório conta com uma equipe interdisciplinar de pesquisadores de diferentes Instituições de Ensino Superior: Brasil: i) Universidade Católica Dom Bosco - UCDB, através do Programa de Pós-Graduação em Desenvolvimento Local - PPGDL e da S-INOVA como agência de apoio e busca de fomento; ii) Universidade Estadual de Mato Grosso do Sul - UEMS; iii) Instituto Federal de Mato Grosso do Sul - IFMS; iv) Universidade Federal de Mato Grosso do Sul - UFMS; v) Centro Universitário Augusto Motta - UNISUAM-RJ. Vale ressaltar, que, via UniRILA, o grupo ainda conta com pesquisadores do Paraguai: Universidade Nacional de Assunção; da Argentina: Universidade Nacional de Jujuy e Universidade Católica de Salta; e do  Chile: Universidade Católica do Norte e Universidade de Antofagasta.
+
+menu1_4=Team Researchers
+menu1_4_P1=The Observatory has an interdisciplinary team of researchers from different Higher Education Institutions: Brazil: i) Dom Bosco Catholic University - UCDB, through the Postgraduate Program in Local Development - PPGDL and S-INOVA as a support and search agency of development; ii) State University of Mato Grosso do Sul - UEMS; iii) Federal Institute of Mato Grosso do Sul - IFMS; iv) Federal University of Mato Grosso do Sul - UFMS; v) Augusto Motta University Center - UNISUAM-RJ. It is worth mentioning that, via UniRILA, the group also has researchers from Paraguay: National University of Asunción; from Argentina: National University of Jujuy and Catholic University of Salta; and from Chile: Catholic University of the North and University of Antofagasta.
 menu1_4_P2=
 menu1_4_P3=
 menu1_4_P4=
 
-menu1_5=Contato 
-menu1_5_P1=A equipe responsável pelo OBSUNIRILA está disponível por meio do nosso Fale Conosco ou diretamente pelo email: atendimento@obsunirila.com.br
+menu1_5=Contact 
+menu1_5_P1=The team responsible for OBSUNIRILA is available through our Contact Us or directly by email: atendimento@obsunirila.com.br
 menu1_5_P2=
 menu1_5_P3=
 menu1_5_P4=
 
-menu1_6=Identidade Visual 
-menu1_6_P1=A identidade Visual do Observatório está em produção e será disponibilizada neste espaço para que seja utilizada por todos os membros da UniRILA. Fazem parte do grupo de informações, as imagens e o manual de uso das marcas. Até finalização do processo, o Observatório utilizará a Marca da UniRILA desenvolvida pela Universidade Estadual de Mato Grosso do Sul - UEMS e disponibilizada na área da UniRILA de nosso portal.
+menu1_6=Visual Identity
+menu1_6_P1=The Observatory's visual identity is in production and will be made available in this space for use by all UniRILA members. The images and brand usage manual are part of the information group. Until the process is completed, the Observatory will use the UniRILA Brand developed by the State University of Mato Grosso do Sul - UEMS and made available in the UniRILA area of ​​our portal.
 menu1_6_P2=
 menu1_6_P3=
 menu1_6_P4=
 
-menu1_7=Comunicação 
-menu1_7_P1=Nesta área serão disponibilizados Releases sobre o Observatório para facilitar a produção de textos sobre o mesmo.
+menu1_7=Communication 
+menu1_7_P1=In this area, Releases about the Observatory will be made available to facilitate the production of texts about it.
 menu1_7_P2=
 menu1_7_P3=
 menu1_7_P4=
 
-menu1_8=Midias Sociais
-menu1_8_P1=Em desenvolvimento.
-menu1_8_P2=Espaço destinado a disponibilização dos links de acesso às mídias sociais do Observatório em todos os países
+menu1_8=Social Media
+menu1_8_P1=Under development.
+menu1_8_P2=Space for providing access links to the Observatory's social media in all countries.
 menu1_8_P3=
 menu1_8_P4=
 
